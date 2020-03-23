@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand text-success border border-success rounded p-1" routerLink="">NACBAR</a>
+  <button class="navbar-toggler border border-success" type="button" data-toggle="collapse"
+    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link text-success" routerLink="">Create Account</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="row pt-2 pl-3">
+  <div class="col-sm-6 col-xl-4 form-group">
+    <label for="cmbGerente">Gerente</label>
+    <select class="custom-select" name="cmbGerente">
+      <option selected>Gerente</option>
+      <option value="RAQUEL">RAQUEL</option>
+      <option value="FABIANA">FABIANA</option>
+      <option value="LYRA">LYRA</option>
+    </select>
+  </div>
+  <div class="col-sm-6 col-xl-4 form-group">
+    <bs-sortable [(ngModel)]="listaClienteModel" fieldName="name" itemClass="sortable-item"
+      itemActiveClass="sortable-item-active" placeholderItem="Drag here" placeholderClass="placeholderStyle"
+      wrapperClass="sortable-wrapper"></bs-sortable>
+  </div>
+  <div class="col-xs-6 col-6 col-md-5 col-lg-3">
+    <bs-sortable [(ngModel)]="listaClienteModel" fieldName="name" itemClass="sortable-item"
+      itemActiveClass="sortable-item-active" placeholderItem="Drag here" placeholderClass="placeholderStyle"
+      wrapperClass="sortable-wrapper"></bs-sortable>
+  </div>
+</div>
